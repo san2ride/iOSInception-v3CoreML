@@ -13,7 +13,7 @@ class MLViewController: UIViewController {
     @IBOutlet weak var pictureImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
-    private var model: Inceptionv3 = Inceptionv3()
+    private var inception: InceptionV1 = InceptionV1()
     
     let images = ["cat", "dog", "rat", "banana"]
     var index = 0
@@ -33,12 +33,12 @@ class MLViewController: UIViewController {
         let img = UIImage(named: images[index])
         self.pictureImageView.image = img
         
-        let resizeImage = img?.resizeTo(size: CGSize(width: 299, height: 299))
+        let resizeImage = img?.resizeTo(size: CGSize(width: 224, height: 224))
         
         let buffer = resizeImage?.toBuffer()
         
         
-        let prediction = try! self.model.prediction(image: buffer!)
+        let prediction = try! self.inception.prediction(input: InceptionV1Input(input__0: buffer!))
         
         self.titleLabel.text = prediction.classLabel
         

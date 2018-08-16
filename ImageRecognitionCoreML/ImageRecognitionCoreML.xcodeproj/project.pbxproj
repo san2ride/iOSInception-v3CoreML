@@ -13,6 +13,7 @@
 		AD953CD120E0C9AB00097E89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD953CCF20E0C9AB00097E89 /* LaunchScreen.storyboard */; };
 		AD953CD920E0C9FA00097E89 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AD953CD820E0C9FA00097E89 /* Inceptionv3.mlmodel */; };
 		AD953CDC20E0CCCF00097E89 /* MLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD953CDB20E0CCCF00097E89 /* MLViewController.swift */; };
+		ADC67F88212537B700C2EBD8 /* InceptionV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ADC67F87212537B700C2EBD8 /* InceptionV1.mlmodel */; };
 		ADDE33BA20E21CEF00C700E7 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE33B920E21CEF00C700E7 /* UIImage+Additions.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		AD953CD220E0C9AB00097E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD953CD820E0C9FA00097E89 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		AD953CDB20E0CCCF00097E89 /* MLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLViewController.swift; sourceTree = "<group>"; };
+		ADC67F87212537B700C2EBD8 /* InceptionV1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = InceptionV1.mlmodel; sourceTree = "<group>"; };
 		ADDE33B920E21CEF00C700E7 /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 		AD953CC520E0C9A500097E89 /* ImageRecognitionCoreML */ = {
 			isa = PBXGroup;
 			children = (
+				ADC67F87212537B700C2EBD8 /* InceptionV1.mlmodel */,
 				AD953CC620E0C9A500097E89 /* AppDelegate.swift */,
 				AD953CD820E0C9FA00097E89 /* Inceptionv3.mlmodel */,
 				AD953CCA20E0C9A500097E89 /* Main.storyboard */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD953CDC20E0CCCF00097E89 /* MLViewController.swift in Sources */,
+				ADC67F88212537B700C2EBD8 /* InceptionV1.mlmodel in Sources */,
 				ADDE33BA20E21CEF00C700E7 /* UIImage+Additions.swift in Sources */,
 				AD953CD920E0C9FA00097E89 /* Inceptionv3.mlmodel in Sources */,
 				AD953CC720E0C9A500097E89 /* AppDelegate.swift in Sources */,
